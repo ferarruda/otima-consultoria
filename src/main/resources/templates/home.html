@@ -13,7 +13,7 @@
 <body>
   <header class="navbar navbar-expand-lg navbar-light bg-transparent w-100">
     <div class="container">
-      <a class="navbar-brand d-flex align-items-center" href="#">
+      <a class="navbar-brand d-flex align-items-center" th:href="@{/}">
         <img src="/images/LogoW.png" alt="Logo Ótima Consultoria" height="50" class="me-2" />
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -21,7 +21,7 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto align-items-lg-center">
-          <li class="nav-item"><a class="nav-link" href="#servicos">Portal</a></li>
+          <li class="nav-item"><a class="nav-link" th:href="@{/portal}">Portal</a></li>
           <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
           <li class="nav-item mt-2 mt-lg-0 ms-lg-3"><a href="#" class="btn btn-cta">Consultoria Gratuita</a></li>
         </ul>
