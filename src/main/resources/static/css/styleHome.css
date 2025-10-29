@@ -40,19 +40,23 @@ body {
   color: #ddd;
 }
 
+
 .btn-cta {
-  background: var(--accent);
-  color: #fff;
+  background: linear-gradient(135deg, var(--primary), var(--accent));
+  color: #fff !important;
   border: none;
   border-radius: 0.5rem;
   padding: 0.5rem 1.5rem;
+  font-weight: 500;
+  transition: all 0.3s;
 }
 
 .btn-cta:hover {
-  background: var(--primary-dark);
+  background: linear-gradient(135deg, var(--accent), var(--primary-dark));
   transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(255,140,0,0.3);
+  box-shadow: 0 4px 12px rgba(255,108,0,0.3);
 }
+
 
 .hero-section {
   position: relative;
