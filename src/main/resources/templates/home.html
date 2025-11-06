@@ -1,206 +1,856 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ótima Consultoria - Soluções Financeiras Inteligentes</title>
-  <meta name="description" content="A Ótima Consultoria oferece soluções financeiras para ajudar você e sua empresa a crescerem com segurança. Crédito, maquininhas, empréstimos e recuperação de crédito." />
-  <link rel="icon" href="/images/Favicon.png" type="image/png" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css" />
-  <link rel="stylesheet" href="/css/styleHome.css" />
-</head>
-<body>
-  <header class="navbar navbar-expand-lg navbar-light bg-transparent w-100">
-    <div class="container">
-      <a class="navbar-brand d-flex align-items-center" th:href="@{/}">
-        <img src="/images/LogoW.png" alt="Logo Ótima Consultoria" height="50" class="me-2" />
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto align-items-lg-center">
-          <li class="nav-item"><a class="nav-link" th:href="@{/portal}">Portal</a></li>
-          <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
-          <li class="nav-item mt-2 mt-lg-0 ms-lg-3"><a href="#" class="btn btn-cta">Consultoria Gratuita</a></li>
-        </ul>
-      </div>
-    </div>
-  </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ótima Consultoria - Soluções Financeiras Inteligentes</title>
+    <meta
+      name="description"
+      content="A Ótima Consultoria oferece soluções financeiras para ajudar você e sua empresa a crescerem com segurança. Crédito, maquininhas, empréstimos e recuperação de crédito."
+    />
+    <link rel="icon" href="/images/Favicon.png" type="image/png" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="/css/styleHome.css" />
+  </head>
 
-  <section class="hero-banner">
-    <img src="/images/Banner.png" alt="Banner Ótima Consultoria" class="img-fluid w-100" />
-  </section>
-
-  <section id="servicos" class="py-5">
-    <div class="container">
-      <div class="text-center mb-5">
-        <h2 class="display-5 fw-bold mb-3">Nossos Serviços</h2>
-        <p class="lead text-muted mx-auto" style="max-width: 700px">Nosso conjunto abrangente de serviços profissionais atende a uma clientela diversificada, desde pequenas até grandes empresas.</p>
-      </div>
-      <div class="row g-4">
-        <div class="col-md-6 col-lg-4">
-          <div class="service-card card h-100 border-0 shadow-sm">
-            <div class="card-body p-4">
-              <div class="icon-box mb-3"><i class="bi bi-credit-card"></i></div>
-              <h3 class="h5 fw-bold mb-3">Prestação de Crédito</h3>
-              <p class="text-muted">Consultoria especializada para ajudar empresas a organizarem suas finanças, reduzirem custos e aumentarem rentabilidade com crescimento sólido e sustentável.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-4">
-          <div class="service-card card h-100 border-0 shadow-sm">
-            <div class="card-body p-4">
-              <div class="icon-box mb-3"><i class="bi bi-phone"></i></div>
-              <h3 class="h5 fw-bold mb-3">Maquininhas de Cartão</h3>
-              <p class="text-muted">Taxas reduzidas e até taxa zero com tecnologia avançada, pagamentos por aproximação e integração com sistemas de gestão.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-4">
-          <div class="service-card card h-100 border-0 shadow-sm">
-            <div class="card-body p-4">
-              <div class="icon-box mb-3"><i class="bi bi-graph-up-arrow"></i></div>
-              <h3 class="h5 fw-bold mb-3">Empréstimos Empresariais</h3>
-              <p class="text-muted">Condições diferenciadas, prazos flexíveis e taxas justas para sua empresa investir, expandir e se consolidar no mercado.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-4">
-          <div class="service-card card h-100 border-0 shadow-sm">
-            <div class="card-body p-4">
-              <div class="icon-box mb-3"><i class="bi bi-arrow-repeat"></i></div>
-              <h3 class="h5 fw-bold mb-3">Recuperação de Crédito</h3>
-              <p class="text-muted">Renegociação de dívidas para limpar o nome da sua empresa e restabelecer seu poder de crédito com estratégias personalizadas.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-4">
-          <div class="service-card card h-100 border-0 shadow-sm">
-            <div class="card-body p-4">
-              <div class="icon-box mb-3"><i class="bi bi-cash-coin"></i></div>
-              <h3 class="h5 fw-bold mb-3">Isenção de Taxas no PIX</h3>
-              <p class="text-muted">Receba pagamentos sem custos adicionais. Mantenha a competitividade e reduza despesas operacionais do seu negócio.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="athospay" class="athospay-section py-5">
-    <div class="container text-center">
-      <div class="badge-pill mb-3"><i class="bi bi-check-circle me-2"></i>Solução Exclusiva</div>
-      <h2 class="display-5 fw-bold mb-4">Athos Pay – A revolução nos meios de Pagamento!</h2>
-      <p class="lead text-muted mb-5">Mais do que uma plataforma de pagamentos; é a solução completa para impulsionar seu negócio, aumentar sua lucratividade e reduzir custos.</p>
-      <div class="row g-4 mb-5">
-        <div class="col-md-6">
-          <div class="feature-card card border-2 h-100">
-            <div class="card-body p-4 d-flex">
-              <div class="feature-icon me-3"><i class="bi bi-credit-card-2-front"></i></div>
-              <div><h4 class="h6 fw-bold mb-2">Receba Pagamentos via Cartão</h4><p class="text-muted mb-0">Taxas reduzidas e máquina integrada a uma conta digital blindada</p></div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6">
-          <div class="feature-card card border-2 h-100">
-            <div class="card-body p-4 d-flex">
-              <div class="feature-icon me-3"><i class="bi bi-clock"></i></div>
-              <div><h4 class="h6 fw-bold mb-2">Dinheiro em 1 Dia Útil</h4><p class="text-muted mb-0">Sem travas, bloqueios ou limites ocultos</p></div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6">
-          <div class="feature-card card border-2 h-100">
-            <div class="card-body p-4 d-flex">
-              <div class="feature-icon me-3"><i class="bi bi-graph-down-arrow"></i></div>
-              <div><h4 class="h6 fw-bold mb-2">Economize até 20%</h4><p class="text-muted mb-0">Em todas as vendas no cartão, garantindo mais margem de lucro</p></div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6">
-          <div class="feature-card card border-2 h-100">
-            <div class="card-body p-4 d-flex">
-              <div class="feature-icon me-3"><i class="bi bi-shield-check"></i></div>
-              <div><h4 class="h6 fw-bold mb-2">Segurança Total</h4><p class="text-muted mb-0">Para o lojista, reduzindo riscos e garantindo estabilidade</p></div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="cta-box text-center p-5 rounded-3">
-        <p class="h5 fw-bold mb-3">💳 Mais praticidade, mais economia, mais segurança!</p>
-        <p class="text-muted mb-4">Chegou a hora de transformar a forma como você recebe pagamentos. Escolha a Athos Pay e comece a lucrar mais hoje mesmo!</p>
-        <a href="#" class="btn btn-cta btn-lg">Como Funciona</a>
-      </div>
-    </div>
-  </section>
-
-  <section id="elisao" class="elisao-section py-5">
-    <div class="container text-center">
-      <h2 class="display-5 fw-bold mb-4">Você sabia que é possível pagar menos imposto <span class="gradient-text">Legalmente?</span></h2>
-      <p class="lead text-muted mb-5">A elisão fiscal é a chave para reduzir sua carga tributária de forma inteligente e dentro da legalidade.</p>
-      <div class="row g-4 mb-5">
-        <div class="col-md-6"><div class="benefit-card card h-100 border-0 shadow-sm"><div class="card-body p-4 d-flex"><div class="benefit-icon me-3"><i class="bi bi-shield-check"></i></div><div><h4 class="h6 fw-bold mb-2">Evite a incidência de impostos</h4><p class="text-muted mb-0">Com estratégias adequadas, você pode prevenir ataques à sua receita</p></div></div></div></div>
-        <div class="col-md-6"><div class="benefit-card card h-100 border-0 shadow-sm"><div class="card-body p-4 d-flex"><div class="benefit-icon me-3"><i class="bi bi-calculator"></i></div><div><h4 class="h6 fw-bold mb-2">Reduza a base de cálculo</h4><p class="text-muted mb-0">Diminua o valor dos tributos com manobras contábeis eficazes</p></div></div></div></div>
-        <div class="col-md-6"><div class="benefit-card card h-100 border-0 shadow-sm"><div class="card-body p-4 d-flex"><div class="benefit-icon me-3"><i class="bi bi-calendar3"></i></div><div><h4 class="h6 fw-bold mb-2">Pague com prazos maiores</h4><p class="text-muted mb-0">Ganhe fôlego no seu fluxo de caixa sem se preocupar com multas</p></div></div></div></div>
-        <div class="col-md-6"><div class="benefit-card card h-100 border-0 shadow-sm"><div class="card-body p-4 d-flex"><div class="benefit-icon me-3"><i class="bi bi-graph-down"></i></div><div><h4 class="h6 fw-bold mb-2">Restituição de valores</h4><p class="text-muted mb-0">Você pode restituir tudo o que pagou a mais legalmente</p></div></div></div></div>
-      </div>
-      <p class="h5 fw-bold mb-4">Está pronto para transformar a maneira como lida com seus impostos?</p>
-      <a href="#" class="btn btn-cta btn-lg">Saiba Mais</a>
-    </div>
-  </section>
-
-  <footer id="contato" class="footer py-5">
-    <div class="container">
-      <div class="row gy-5 align-items-start">
-        <div class="col-md-6 col-lg-3 text-center text-md-start">
-          <div class="logo-box mb-3"><img src="/images/LogoY.png" alt="Ótima Consultoria" width="120" /></div>
-          <p class="text-muted small mb-0">Soluções financeiras inteligentes para ajudar você e sua empresa a crescerem com segurança, transparência e atendimento personalizado.</p>
-        </div>
-        <div class="col-md-6 col-lg-3 text-center text-md-start">
-          <h5 class="fw-bold mb-3 text-dark">Links Rápidos</h5>
-          <ul class="list-unstyled mb-0">
-            <li><a href="#servicos" class="footer-link">Nossos Serviços</a></li>
-            <li><a href="#athospay" class="footer-link">Athos Pay</a></li>
-            <li><a href="#elisao" class="footer-link">Elisão Fiscal</a></li>
-            <li><a href="#contato" class="footer-link">Contato</a></li>
+  <body>
+    <header class="navbar navbar-expand-lg navbar-light bg-transparent w-100">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center" th:href="@{/}">
+          <img
+            src="/images/LogoY.png"
+            alt="Logo Ótima Consultoria"
+            height="50"
+            class="me-2"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto align-items-lg-center">
+            <li class="nav-item">
+              <a class="nav-link" th:href="@{/}">Quem somos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contato">Soluções</a>
+            </li>
+            <!--             <li class="nav-item mt-2 mt-lg-0 ms-lg-3">
+              <a href="#" class="btn btn-cta">Seja parceiro</a>
+            </li> -->
+            <li class="nav-item mt-2 mt-lg-0 ms-lg-3">
+              <a href="#" class="btn btn-cta">Análise Grátis</a>
+            </li>
           </ul>
         </div>
-        <div class="col-md-6 col-lg-3 text-center text-md-start">
-          <h5 class="fw-bold mb-3 text-dark">Contato</h5>
-          <p class="text-muted mb-1"><i class="bi bi-telephone text-primary me-2"></i>(22) 99999-4736</p>
-          <p class="text-muted"><i class="bi bi-envelope text-primary me-2"></i>contato@otimaconsultoria.com</p>
+      </div>
+    </header>
+
+    <section class="hero-banner position-relative">
+      <picture>
+        <source srcset="/images/Mobile1.png" media="(max-width: 768px)" />
+        <img
+          src="/images/Desktop1.jpg"
+          alt="Banner Ótima Consultoria"
+          class="img-fluid w-100"
+        />
+      </picture>
+
+      <div
+        class="hero-btn position-absolute d-none d-md-block"
+        style="top: 58%; padding-left: 5.3%"
+      >
+        <a
+          href="https://wa.me/5522997248165?text=Olá!%20Quero%20saber%20mais!"
+          class="btn btn-glass btn-lg px-4 py-2"
+        >
+          Faça sua análise grátis
+        </a>
+      </div>
+
+      <div
+        class="hero-btn-mobile position-absolute d-block d-md-none text-center w-100"
+        style="top: 33%;"
+        
+      >
+        <a
+          href="https://wa.me/5522997248165?text=Olá!%20Quero%20saber%20mais!"
+          class="btn btn-glass btn-sm"
+          
+        >
+          Análise grátis
+        </a>
+      </div>
+    </section>
+
+    <!--    <section id="servicos" class="py-5">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 class="display-5 fw-bold mb-3">Nossos Serviços</h2>
+          <p class="lead text-muted mx-auto" style="max-width: 700px">
+            Nosso conjunto abrangente de serviços profissionais atende a uma
+            clientela diversificada, desde pequenas até grandes empresas.
+          </p>
         </div>
-        <div class="col-md-6 col-lg-3 text-center text-md-start">
-          <h5 class="fw-bold mb-3 text-dark">Redes Sociais</h5>
-          <div class="d-flex justify-content-center justify-content-md-start gap-3">
-            <a href="#" class="social-link"><i class="bi bi-facebook"></i></a>
-            <a href="#" class="social-link"><i class="bi bi-instagram"></i></a>
-            <a href="#" class="social-link"><i class="bi bi-linkedin"></i></a>
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-4">
+            <div class="service-card card h-100 border-0 shadow-sm">
+              <div class="card-body p-4">
+                <div class="icon-box mb-3">
+                  <i class="bi bi-credit-card"></i>
+                </div>
+                <h3 class="h5 fw-bold mb-3">Prestação de Crédito</h3>
+                <p class="text-muted">
+                  Consultoria especializada para ajudar empresas a organizarem
+                  suas finanças, reduzirem custos e aumentarem rentabilidade com
+                  crescimento sólido e sustentável.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="service-card card h-100 border-0 shadow-sm">
+              <div class="card-body p-4">
+                <div class="icon-box mb-3"><i class="bi bi-phone"></i></div>
+                <h3 class="h5 fw-bold mb-3">Maquininhas de Cartão</h3>
+                <p class="text-muted">
+                  Taxas reduzidas e até taxa zero com tecnologia avançada,
+                  pagamentos por aproximação e integração com sistemas de
+                  gestão.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="service-card card h-100 border-0 shadow-sm">
+              <div class="card-body p-4">
+                <div class="icon-box mb-3">
+                  <i class="bi bi-graph-up-arrow"></i>
+                </div>
+                <h3 class="h5 fw-bold mb-3">Empréstimos Empresariais</h3>
+                <p class="text-muted">
+                  Condições diferenciadas, prazos flexíveis e taxas justas para
+                  sua empresa investir, expandir e se consolidar no mercado.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="service-card card h-100 border-0 shadow-sm">
+              <div class="card-body p-4">
+                <div class="icon-box mb-3">
+                  <i class="bi bi-arrow-repeat"></i>
+                </div>
+                <h3 class="h5 fw-bold mb-3">Recuperação de Crédito</h3>
+                <p class="text-muted">
+                  Renegociação de dívidas para limpar o nome da sua empresa e
+                  restabelecer seu poder de crédito com estratégias
+                  personalizadas.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="service-card card h-100 border-0 shadow-sm">
+              <div class="card-body p-4">
+                <div class="icon-box mb-3"><i class="bi bi-cash-coin"></i></div>
+                <h3 class="h5 fw-bold mb-3">Isenção de Taxas no PIX</h3>
+                <p class="text-muted">
+                  Receba pagamentos sem custos adicionais. Mantenha a
+                  competitividade e reduza despesas operacionais do seu negócio.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      <hr class="footer-divider my-4" />
-      <div class="text-center text-muted small">
-        &copy; 2025 Ótima Consultoria - Soluções Financeiras Inteligentes. Todos os direitos reservados.
-      </div>
-    </div>
-  </footer>
+    </section> -->
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-  <script>
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-      anchor.addEventListener("click", function (e) {
-        e.preventDefault();
-        const target = document.querySelector(this.getAttribute("href"));
-        if (target) {
-          target.scrollIntoView({ behavior: "smooth", block: "start" });
-          const navbarCollapse = document.querySelector(".navbar-collapse");
-          if (navbarCollapse.classList.contains("show")) new bootstrap.Collapse(navbarCollapse).hide();
-        }
+    <section id="servicos" class="pt-5 pb-4 bg-light">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 class="fw-bold">Nossos Serviços</h2>
+          <p class="text-muted">
+            Soluções modernas para impulsionar o crescimento da sua empresa
+          </p>
+        </div>
+
+        <div class="row g-4">
+          <!-- Card 1 -->
+          <div class="col-12 col-md-4">
+            <div class="card shadow-sm border-0 h-100">
+              <img
+                src="/images/card1.png"
+                class="card-img-top"
+                alt="Maquininhas de Cartão"
+              />
+              <div class="card-body">
+                <h5 class="card-title fw-semibold">Maquininhas de Cartão</h5>
+                <p class="card-text text-muted">
+                  Tecnologia moderna e taxas competitivas para o seu negócio.
+                </p>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item d-flex align-items-center">
+                    <i class="bi bi-check-circle-fill text-success me-2"></i>
+                    Recebimento imediato
+                  </li>
+                  <li class="list-group-item d-flex align-items-center">
+                    <i class="bi bi-check-circle-fill text-success me-2"></i>
+                    Taxas reduzidas
+                  </li>
+                  <li class="list-group-item d-flex align-items-center">
+                    <i class="bi bi-check-circle-fill text-success me-2"></i>
+                    Facilidade total
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="col-12 col-md-4">
+            <div class="card shadow-sm border-0 h-100">
+              <img
+                src="/images/card3.png"
+                class="card-img-top"
+                alt="Prestação de Créditos"
+              />
+              <div class="card-body">
+                <h5 class="card-title fw-semibold">Prestação de Créditos</h5>
+                <p class="card-text text-muted">
+                  Facilitamos o acesso a crédito de forma rápida e segura.
+                </p>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item d-flex align-items-center">
+                    <i class="bi bi-check-circle-fill text-success me-2"></i>
+                    Análise simplificada
+                  </li>
+                  <li class="list-group-item d-flex align-items-center">
+                    <i class="bi bi-check-circle-fill text-success me-2"></i>
+                    Condições flexíveis
+                  </li>
+                  <li class="list-group-item d-flex align-items-center">
+                    <i class="bi bi-check-circle-fill text-success me-2"></i>
+                    Acesso rápido
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="col-12 col-md-4">
+            <div class="card shadow-sm border-0 h-100">
+              <img
+                src="/images/card2.png"
+                class="card-img-top"
+                alt="Empréstimos Empresariais"
+              />
+              <div class="card-body">
+                <h5 class="card-title fw-semibold">Empréstimos Empresariais</h5>
+                <p class="card-text text-muted">
+                  Soluções financeiras para fortalecer o fluxo de caixa da sua
+                  empresa.
+                </p>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item d-flex align-items-center">
+                    <i class="bi bi-check-circle-fill text-success me-2"></i>
+                    Capital imediato
+                  </li>
+                  <li class="list-group-item d-flex align-items-center">
+                    <i class="bi bi-check-circle-fill text-success me-2"></i>
+                    Juros competitivos
+                  </li>
+                  <li class="list-group-item d-flex align-items-center">
+                    <i class="bi bi-check-circle-fill text-success me-2"></i>
+                    Apoio personalizado
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="col-12 col-md-4">
+            <div class="card shadow-sm border-0 h-100">
+              <img
+                src="/images/card6.png"
+                class="card-img-top"
+                alt="Recuperação de Crédito"
+              />
+              <div class="card-body">
+                <h5 class="card-title fw-semibold">Recuperação de Crédito</h5>
+                <p class="card-text text-muted">
+                  Estratégias eficazes para recuperar crédito e reorganizar
+                  finanças.
+                </p>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item d-flex align-items-center">
+                    <i class="bi bi-check-circle-fill text-success me-2"></i>
+                    Nome limpo
+                  </li>
+                  <li class="list-group-item d-flex align-items-center">
+                    <i class="bi bi-check-circle-fill text-success me-2"></i>
+                    Solução estratégica
+                  </li>
+                  <li class="list-group-item d-flex align-items-center">
+                    <i class="bi bi-check-circle-fill text-success me-2"></i>
+                    Negociação justa
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 5 -->
+          <div class="col-12 col-md-4">
+            <div class="card shadow-sm border-0 h-100">
+              <img
+                src="/images/card5.png"
+                class="card-img-top"
+                alt="Isenção de Taxas no PIX"
+              />
+              <div class="card-body">
+                <h5 class="card-title fw-semibold">Isenção de Taxas no PIX</h5>
+                <p class="card-text text-muted">
+                  Aproveite transações PIX sem custos para seu negócio.
+                </p>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item d-flex align-items-center">
+                    <i class="bi bi-check-circle-fill text-success me-2"></i>
+                    Economia garantida
+                  </li>
+                  <li class="list-group-item d-flex align-items-center">
+                    <i class="bi bi-check-circle-fill text-success me-2"></i>
+                    Transações livres
+                  </li>
+                  <li class="list-group-item d-flex align-items-center">
+                    <i class="bi bi-check-circle-fill text-success me-2"></i>
+                    Zero tarifas
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 6 -->
+          <div class="col-12 col-md-4">
+            <div class="card shadow-sm border-0 h-100">
+              <img
+                src="/images/card4.png"
+                class="card-img-top"
+                alt="Revolução nos Meios de Pagamento"
+              />
+              <div class="card-body">
+                <h5 class="card-title fw-semibold">
+                  Revolução nos Meios de Pagamento
+                </h5>
+                <p class="card-text text-muted">
+                  Inovação que conecta empresas e clientes de forma simples e
+                  segura.
+                </p>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item d-flex align-items-center">
+                    <i class="bi bi-check-circle-fill text-success me-2"></i>
+                    Tecnologia moderna
+                  </li>
+                  <li class="list-group-item d-flex align-items-center">
+                    <i class="bi bi-check-circle-fill text-success me-2"></i>
+                    Agilidade total
+                  </li>
+                  <li class="list-group-item d-flex align-items-center">
+                    <i class="bi bi-check-circle-fill text-success me-2"></i>
+                    Segurança avançada
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="text-center mt-4 py-5">
+            <a
+              href="https://wa.me/5522997248165?text=Olá!%20Tenho%20interesse%20nos%20serviços%20da%20Ótima%20Consultoria."
+              target="_blank"
+              class="btn btn-cta btn-lg"
+            >
+              Entre em contato
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <img
+        src="/images/Desktop2.jpg"
+        alt="seção empresas parceiras"
+        class="img-fluid w-100"
+      />
+    </section>
+
+    <!--     <section id="athospay" class="athospay-section py-5">
+      <div class="container text-center">
+        <div class="badge-pill mb-3">
+          <i class="bi bi-check-circle me-2"></i>Solução Exclusiva
+        </div>
+        <h2 class="display-5 fw-bold mb-4">
+          Athos Pay – A revolução nos meios de Pagamento!
+        </h2>
+        <p class="lead text-muted mb-5">
+          Mais do que uma plataforma de pagamentos; é a solução completa para
+          impulsionar seu negócio, aumentar sua lucratividade e reduzir custos.
+        </p>
+        <div class="row g-4 mb-5">
+          <div class="col-md-6">
+            <div class="feature-card card border-2 h-100">
+              <div class="card-body p-4 d-flex">
+                <div class="feature-icon me-3">
+                  <i class="bi bi-credit-card-2-front"></i>
+                </div>
+                <div>
+                  <h4 class="h6 fw-bold mb-2">Receba Pagamentos via Cartão</h4>
+                  <p class="text-muted mb-0">
+                    Taxas reduzidas e máquina integrada a uma conta digital
+                    blindada
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="feature-card card border-2 h-100">
+              <div class="card-body p-4 d-flex">
+                <div class="feature-icon me-3"><i class="bi bi-clock"></i></div>
+                <div>
+                  <h4 class="h6 fw-bold mb-2">Dinheiro em 1 Dia Útil</h4>
+                  <p class="text-muted mb-0">
+                    Sem travas, bloqueios ou limites ocultos
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="feature-card card border-2 h-100">
+              <div class="card-body p-4 d-flex">
+                <div class="feature-icon me-3">
+                  <i class="bi bi-graph-down-arrow"></i>
+                </div>
+                <div>
+                  <h4 class="h6 fw-bold mb-2">Economize até 20%</h4>
+                  <p class="text-muted mb-0">
+                    Em todas as vendas no cartão, garantindo mais margem de
+                    lucro
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="feature-card card border-2 h-100">
+              <div class="card-body p-4 d-flex">
+                <div class="feature-icon me-3">
+                  <i class="bi bi-shield-check"></i>
+                </div>
+                <div>
+                  <h4 class="h6 fw-bold mb-2">Segurança Total</h4>
+                  <p class="text-muted mb-0">
+                    Para o lojista, reduzindo riscos e garantindo estabilidade
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="cta-box text-center p-5 rounded-3">
+          <p class="h5 fw-bold mb-3">
+            💳 Mais praticidade, mais economia, mais segurança!
+          </p>
+          <p class="text-muted mb-4">
+            Chegou a hora de transformar a forma como você recebe pagamentos.
+            Escolha a Athos Pay e comece a lucrar mais hoje mesmo!
+          </p>
+          <a
+            href="https://wa.me/5522997248165?text=Olá!%20Tenho%20interesse%20nos%20serviços%20da%20Ótima%20Consultoria."
+            target="_blank"
+            class="btn btn-cta btn-lg"
+          >
+            Fale Conosco
+          </a>
+        </div>
+      </div>
+    </section> -->
+
+    <!--     <section id="elisao" class="elisao-section py-5">
+      <div class="container text-center">
+        <h2 class="display-5 fw-bold mb-4">
+          Você sabia que é possível pagar menos imposto
+          <span class="gradient-text">Legalmente?</span>
+        </h2>
+        <p class="lead text-muted mb-5">
+          A elisão fiscal é a chave para reduzir sua carga tributária de forma
+          inteligente e dentro da legalidade.
+        </p>
+        <div class="row g-4 mb-5">
+          <div class="col-md-6">
+            <div class="benefit-card card h-100 border-0 shadow-sm">
+              <div class="card-body p-4 d-flex">
+                <div class="benefit-icon me-3">
+                  <i class="bi bi-shield-check"></i>
+                </div>
+                <div>
+                  <h4 class="h6 fw-bold mb-2">
+                    Evite a incidência de impostos
+                  </h4>
+                  <p class="text-muted mb-0">
+                    Com estratégias adequadas, você pode prevenir ataques à sua
+                    receita
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="benefit-card card h-100 border-0 shadow-sm">
+              <div class="card-body p-4 d-flex">
+                <div class="benefit-icon me-3">
+                  <i class="bi bi-calculator"></i>
+                </div>
+                <div>
+                  <h4 class="h6 fw-bold mb-2">Reduza a base de cálculo</h4>
+                  <p class="text-muted mb-0">
+                    Diminua o valor dos tributos com manobras contábeis eficazes
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="benefit-card card h-100 border-0 shadow-sm">
+              <div class="card-body p-4 d-flex">
+                <div class="benefit-icon me-3">
+                  <i class="bi bi-calendar3"></i>
+                </div>
+                <div>
+                  <h4 class="h6 fw-bold mb-2">Pague com prazos maiores</h4>
+                  <p class="text-muted mb-0">
+                    Ganhe fôlego no seu fluxo de caixa sem se preocupar com
+                    multas
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="benefit-card card h-100 border-0 shadow-sm">
+              <div class="card-body p-4 d-flex">
+                <div class="benefit-icon me-3">
+                  <i class="bi bi-graph-down"></i>
+                </div>
+                <div>
+                  <h4 class="h6 fw-bold mb-2">Restituição de valores</h4>
+                  <p class="text-muted mb-0">
+                    Você pode restituir tudo o que pagou a mais legalmente
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p class="h5 fw-bold mb-4">
+          Está pronto para transformar a maneira como lida com seus impostos?
+        </p>
+        <a
+          href="https://wa.me/5522997248165?text=Olá!%20Tenho%20interesse%20nos%20serviços%20da%20Ótima%20Consultoria."
+          target="_blank"
+          class="btn btn-cta btn-lg"
+        >
+          Saiba Mais
+        </a>
+      </div>
+    </section> -->
+
+    <section id="sobre" class="py-5 bg-light">
+      <div class="container pb-5">
+        <div class="row align-items-center g-5">
+          <div class="col-md-6 text-center order-1 order-md-2">
+            <img
+              src="/images/Portal.png"
+              alt="Sobre a Ótima Consultoria"
+              class="img-fluid rounded-4 shadow-sm"
+              style="max-width: 90%; height: auto"
+            />
+          </div>
+
+          <div class="col-md-6 order-2 order-md-1">
+            <div class="px-3" style="max-width: 90%">
+              <h2 class="fw-bold mb-3">Soluções que impulsionam resultados</h2>
+              <p
+                class="text-muted mb-4"
+                style="line-height: 1.7; font-size: 1.05rem"
+              >
+                Na Ótima Consultoria, oferecemos soluções personalizadas para
+                pequenas e médias empresas que buscam crescer de forma
+                estruturada. Nosso time combina experiência e inovação para
+                entregar resultados reais e sustentáveis.
+              </p>
+              <a
+                href="https://wa.me/5521XXXXXXXXX?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20a%20consultoria."
+                target="_blank"
+                class="btn btn-cta btn-lg mt-2"
+                >Fale com um consultor</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container pt-5">
+        <div class="row align-items-center g-5">
+          <div class="col-md-6 text-center order-1">
+            <img
+              src="/images/Portal.png"
+              alt="Sobre a Ótima Consultoria"
+              class="img-fluid rounded-4 shadow-sm"
+              style="max-width: 90%; height: auto"
+            />
+          </div>
+
+          <div class="col-md-6 order-2">
+            <div class="px-3" style="max-width: 90%">
+              <h2 class="fw-bold mb-3">Soluções que impulsionam resultados</h2>
+              <p
+                class="text-muted mb-4"
+                style="line-height: 1.7; font-size: 1.05rem"
+              >
+                Na Ótima Consultoria, oferecemos soluções personalizadas para
+                pequenas e médias empresas que buscam crescer de forma
+                estruturada. Nosso time combina experiência e inovação para
+                entregar resultados reais e sustentáveis.
+              </p>
+              <a
+                href="https://wa.me/5521XXXXXXXXX?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20a%20consultoria."
+                target="_blank"
+                class="btn btn-cta btn-lg mt-2"
+                >Fale com um consultor</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq" class="py-5 bg-light">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 class="fw-bold">Dúvidas Frequentes</h2>
+          <p class="text-muted">
+            Encontre respostas rápidas sobre nossos serviços e suporte.
+          </p>
+        </div>
+
+        <div class="accordion accordion-flush" id="faqAccordion">
+          <div class="accordion-item shadow-sm mb-3 rounded-3">
+            <h2 class="accordion-header" id="faq-heading-1">
+              <button
+                class="accordion-button collapsed fw-semibold d-flex justify-content-between align-items-center"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#faq-collapse-1"
+                aria-expanded="false"
+                aria-controls="faq-collapse-1"
+              >
+                <span>Como funciona o atendimento da Ótima Consultoria?</span>
+                <i class="bi bi-plus-circle-fill ms-2 icon-toggle"></i>
+              </button>
+            </h2>
+            <div
+              id="faq-collapse-1"
+              class="accordion-collapse collapse"
+              aria-labelledby="faq-heading-1"
+              data-bs-parent="#faqAccordion"
+            >
+              <div class="accordion-body">
+                Nosso atendimento é personalizado. Você pode entrar em contato
+                pelo WhatsApp, e-mail ou formulário e um consultor entrará em
+                contato em até 24h.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item shadow-sm mb-3 rounded-3">
+            <h2 class="accordion-header" id="faq-heading-2">
+              <button
+                class="accordion-button collapsed fw-semibold d-flex justify-content-between align-items-center"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#faq-collapse-2"
+                aria-expanded="false"
+                aria-controls="faq-collapse-2"
+              >
+                <span>A consultoria é gratuita?</span>
+                <i class="bi bi-plus-circle-fill ms-2 icon-toggle"></i>
+              </button>
+            </h2>
+            <div
+              id="faq-collapse-2"
+              class="accordion-collapse collapse"
+              aria-labelledby="faq-heading-2"
+              data-bs-parent="#faqAccordion"
+            >
+              <div class="accordion-body">
+                Oferecemos uma avaliação inicial gratuita para entender suas
+                necessidades. Após isso, apresentamos um plano de consultoria
+                sob medida.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item shadow-sm mb-3 rounded-3">
+            <h2 class="accordion-header" id="faq-heading-3">
+              <button
+                class="accordion-button collapsed fw-semibold d-flex justify-content-between align-items-center"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#faq-collapse-3"
+                aria-expanded="false"
+                aria-controls="faq-collapse-3"
+              >
+                <span>Quais setores a Ótima Consultoria atende?</span>
+                <i class="bi bi-plus-circle-fill ms-2 icon-toggle"></i>
+              </button>
+            </h2>
+            <div
+              id="faq-collapse-3"
+              class="accordion-collapse collapse"
+              aria-labelledby="faq-heading-3"
+              data-bs-parent="#faqAccordion"
+            >
+              <div class="accordion-body">
+                Atuamos em diversos segmentos, incluindo pequenas e médias
+                empresas dos ramos de serviços, varejo, tecnologia e turismo.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item shadow-sm mb-3 rounded-3">
+            <h2 class="accordion-header" id="faq-heading-4">
+              <button
+                class="accordion-button collapsed fw-semibold d-flex justify-content-between align-items-center"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#faq-collapse-4"
+                aria-expanded="false"
+                aria-controls="faq-collapse-4"
+              >
+                <span>Como posso solicitar um orçamento?</span>
+                <i class="bi bi-plus-circle-fill ms-2 icon-toggle"></i>
+              </button>
+            </h2>
+            <div
+              id="faq-collapse-4"
+              class="accordion-collapse collapse"
+              aria-labelledby="faq-heading-4"
+              data-bs-parent="#faqAccordion"
+            >
+              <div class="accordion-body">
+                Basta clicar no botão de WhatsApp disponível no site ou
+                preencher o formulário na seção “Contato”. Nossa equipe
+                responderá rapidamente.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer id="contato" class="footer py-5">
+      <div class="container">
+        <div class="row gy-5 align-items-start">
+          <div class="col-md-6 col-lg-3 text-center text-md-start">
+            <div class="logo-box mb-3">
+              <img
+                src="/images/LogoY.png"
+                alt="Ótima Consultoria"
+                width="120"
+              />
+            </div>
+            <p class="text-muted small mb-0">
+              Soluções financeiras inteligentes para ajudar você e sua empresa a
+              crescerem com segurança, transparência e atendimento
+              personalizado.
+            </p>
+          </div>
+          <div class="col-md-6 col-lg-3 text-center text-md-start">
+            <h5 class="fw-bold mb-3 text-dark">Links Rápidos</h5>
+            <ul class="list-unstyled mb-0">
+              <li>
+                <a href="#servicos" class="footer-link">Nossos Serviços</a>
+              </li>
+              <li><a href="#athospay" class="footer-link">Athos Pay</a></li>
+              <li><a href="#elisao" class="footer-link">Elisão Fiscal</a></li>
+              <li><a href="#contato" class="footer-link">Contato</a></li>
+            </ul>
+          </div>
+          <div class="col-md-6 col-lg-3 text-center text-md-start">
+            <h5 class="fw-bold mb-3 text-dark">Contato</h5>
+            <p class="text-muted mb-1">
+              <i class="bi bi-telephone text-primary me-2"></i>(22) 99999-4736
+            </p>
+            <p class="text-muted">
+              <i class="bi bi-envelope text-primary me-2"></i
+              >contato@otimaconsultoria.com
+            </p>
+          </div>
+          <div class="col-md-6 col-lg-3 text-center text-md-start">
+            <h5 class="fw-bold mb-3 text-dark">Redes Sociais</h5>
+            <div
+              class="d-flex justify-content-center justify-content-md-start gap-3"
+            >
+              <a href="#" class="social-link"><i class="bi bi-facebook"></i></a>
+              <a href="#" class="social-link"
+                ><i class="bi bi-instagram"></i
+              ></a>
+              <a href="#" class="social-link"><i class="bi bi-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+        <hr class="footer-divider my-4" />
+        <div class="text-center text-muted small">
+          &copy; 2025 Ótima Consultoria - Soluções Financeiras Inteligentes.
+          Todos os direitos reservados.
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+          const target = document.querySelector(this.getAttribute("href"));
+          if (target) {
+            target.scrollIntoView({ behavior: "smooth", block: "start" });
+            const navbarCollapse = document.querySelector(".navbar-collapse");
+            if (navbarCollapse.classList.contains("show"))
+              new bootstrap.Collapse(navbarCollapse).hide();
+          }
+        });
       });
-    });
-  </script>
-</body>
+    </script>
+  </body>
 </html>
